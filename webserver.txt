@@ -1,0 +1,15 @@
+PROCEDURE:
+1. Download and install XAMPP for Windows from https://www.apachefriends.org. From the XAMPP control panel, start the Apache and MySQL services.
+ 
+
+2. Download DVWA from https://github.com/digininja/DVWA, extract it into C:\xampp\htdocs\dvwa and open http://localhost/dvwa/setup.php in the browser. Click 'Create / Reset Database'.
+3. Login to DVWA using the default credentials admin / password and set DVWA Security to 'Low' from the DVWA Security tab.
+ 
+
+4. Download and install OWASP ZAP from https://www.zaproxy.org. Open ZAP and select 'Automated Scan'.
+
+
+5. Enter the target URL http://localhost/dvwa/ and click 'Attack'. ZAP will spider the site and run an active scan.
+ 
+
+6. After the scan completes, open the 'Alerts' tab to view the vulnerabilities found in DVWA, such as Cross Site Scripting (XSS), SQL Injection, and CSRF.

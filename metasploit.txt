@@ -1,0 +1,43 @@
+PROCEDURE:
+1. Download Metasploitable 2 (a deliberately vulnerable Linux VM) from SourceForge and import it into VMware Workstation Player. Power on the VM and login with msfadmin / msfadmin. Note the IP address by running 'ifconfig'.
+ 
+
+2. On the Windows host, install Nmap from https://nmap.org and run 'nmap -sV <Metasploitable_IP>' to discover open ports and service versions.
+
+
+3. Install the Metasploit Framework on Windows from https://www.metasploit.com/download. Open msfconsole.
+[ Screenshot: msfconsole banner after launching Metasploit ]
+
+
+
+
+
+
+
+4. In msfconsole, type 'use exploit/unix/ftp/vsftpd_234_backdoor' to select the vsftpd backdoor exploit module.
+[ Screenshot: msfconsole after selecting the vsftpd_234_backdoor module ]
+
+
+
+
+
+
+
+5. Set the target with 'set RHOSTS <Metasploitable_IP>' and run the exploit using 'exploit'. A root shell is returned by the vulnerable FTP service.
+[ Screenshot: Successful exploit showing a root shell on the Metasploitable VM (whoami returns root) ]
+
+
+
+
+
+
+
+6. Inside the obtained shell, run commands such as 'whoami', 'id' and 'cat /etc/shadow' to confirm full root access, then exit with 'exit'.
+[ Screenshot: Output of whoami, id and cat /etc/shadow inside the exploited shell ]
+
+
+
+
+
+
+

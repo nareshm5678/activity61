@@ -1,0 +1,40 @@
+PROCEDURE:
+1. Create a small C source file hello.c with the following content using Notepad:
+    #include <stdio.h>
+    int main(void) {
+        char secret[] = "NareshSecret123";
+        printf("Hello Ethical Hacker!\n");
+        return 0;
+    }
+ 
+2. Compile the source file using MinGW-w64 with the command 'gcc hello.c -o hello.exe' inside Command Prompt. 
+  
+
+3. Download the standalone strings.exe from Sysinternals (https://learn.microsoft.com/sysinternals/downloads/strings) and run 'strings.exe hello.exe | findstr /i naresh'. Observe that the embedded string 'NareshSecret123' is leaked from the compiled binary.
+[ Screenshot: Strings tool output showing the embedded NareshSecret123 string ]
+
+
+
+
+
+
+
+4. Download Ghidra from https://ghidra-sre.org and extract it. Launch ghidraRun.bat to open Ghidra and create a new project named ReverseLab.
+[ Screenshot: Ghidra main project window with the new ReverseLab project ]
+
+
+
+
+
+
+
+5. In Ghidra, drag and drop hello.exe into the project, double-click it and accept the default analysis options. Wait for the auto-analysis to complete.
+[ Screenshot: Ghidra auto-analysis options dialog with default options selected ]
+
+
+
+
+
+
+
+6. In the Symbol Tree, open the 'main' function. The decompiler window on the right displays a high-level C-like reconstruction of the program, recovering the original printf call and the embedded secret string.

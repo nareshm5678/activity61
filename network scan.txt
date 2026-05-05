@@ -1,0 +1,49 @@
+⚙️ Procedure
+🔹 Step 1: Choose Target
+
+Use a safe lab target:
+
+scanme.nmap.org
+🔹 Step 2: Host Discovery (Ping Scan)
+nmap -sn scanme.nmap.org
+
+👉 Finds if host is alive
+
+🔹 Step 3: TCP SYN Scan (Stealth Scan)
+nmap -sS scanme.nmap.org
+
+👉 Detects:
+
+Open ports
+Half-open scanning (less detectable)
+🔹 Step 4: TCP Connect Scan
+nmap -sT scanme.nmap.org
+
+👉 Full connection scan (more reliable but detectable)
+
+🔹 Step 5: Service Version Detection
+nmap -sV scanme.nmap.org
+
+👉 Identifies:
+
+Service names
+Versions
+🔹 Step 6: OS Detection
+nmap -O scanme.nmap.org
+
+👉 Predicts:
+
+Operating system
+🔹 Step 7: Aggressive Scan
+nmap -A scanme.nmap.org
+
+👉 Combines:
+
+OS detection
+Version detection
+Script scanning
+Traceroute
+🔹 Step 8: Scan Specific Ports
+nmap -p 80,443 scanme.nmap.org
+🔹 Step 9: Scan All Ports
+nmap -p- scanme.nmap.org

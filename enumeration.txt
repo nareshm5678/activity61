@@ -1,0 +1,71 @@
+⚙️ Procedure
+🔹 Part A: Enumeration
+Step 1: Service Enumeration
+nmap -sV scanme.nmap.org
+
+👉 Identifies:
+
+Open ports
+Service versions
+Step 2: Detailed Enumeration
+nmap -A scanme.nmap.org
+
+👉 Extracts:
+
+OS details
+Running services
+Scripts output
+Step 3: DNS Enumeration
+nmap --script dns-brute example.com
+
+👉 Finds:
+
+Subdomains
+Step 4: SMB/User Enumeration (Local Network Only)
+nmap --script smb-enum-users <target-ip>
+
+👉 Retrieves:
+
+User accounts
+Shared resources
+🔹 Part B: Packet Sniffing
+Using Wireshark
+Step 1
+
+Open Wireshark
+
+Step 2
+
+Select network interface (Wi-Fi/Ethernet)
+
+Step 3
+
+Start capture
+
+Step 4
+
+Apply filters:
+
+http
+dns
+tcp
+
+👉 Observe:
+
+Source IP
+Destination IP
+Protocol
+Packet details
+Using tcpdump
+tcpdump -i eth0
+
+Filter example:
+
+tcpdump port 80
+📊 Observation Table
+Tool	Information Obtained
+Nmap	Ports, services, OS
+DNS Script	Subdomains
+SMB Enum	Users, shares
+Wireshark	Packet data
+tcpdump	Live traffic

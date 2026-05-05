@@ -1,0 +1,55 @@
+1. Identify target IP
+
+On your lab VM:
+
+ifconfig
+
+or
+
+ip a
+2. Basic network scan with Nmap
+
+Use Nmap:
+
+nmap -sn 192.168.1.0/24
+
+👉 Finds live hosts in your lab network
+
+3. Port scanning
+nmap -sS 192.168.1.5
+
+👉 Gives:
+
+Open ports
+Possible services
+4. Service & version detection
+nmap -sV 192.168.1.5
+
+👉 Example output:
+
+21 → FTP
+22 → SSH
+80 → HTTP
+5. OS detection
+nmap -O 192.168.1.5
+6. DNS / domain footprinting (if using web apps)
+
+Use:
+
+nslookup example.local
+
+or
+
+whois example.com
+7. Web footprinting
+
+If port 80 is open:
+
+Open browser → http://<target-ip>
+Use tools like:
+Nikto
+Dirb
+
+Example:
+
+nikto -h http://192.168.1.5

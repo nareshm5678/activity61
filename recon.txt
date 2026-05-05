@@ -1,0 +1,58 @@
+⚙️ Procedure (Step-by-Step)
+🔹 Step 1: Choose Target
+
+Use a safe domain like:
+
+example.com
+scanme.nmap.org  (recommended for labs)
+🔹 Step 2: WHOIS Lookup
+
+Command:
+
+whois example.com
+
+👉 Collect:
+
+Domain owner
+Registrar
+Creation date
+Name servers
+🔹 Step 3: DNS Enumeration
+nslookup example.com
+
+👉 Find:
+
+IP address
+Mail servers
+DNS records
+🔹 Step 4: Subdomain & Email Gathering
+theHarvester -d example.com -b google
+
+👉 Output:
+
+Emails
+Subdomains
+Hosts
+🔹 Step 5: Network Scanning (Active Recon)
+nmap -A scanme.nmap.org
+
+👉 Extract:
+
+Open ports
+Services
+OS detection
+🔹 Step 6: Website Technology Detection
+whatweb example.com
+
+👉 Identify:
+
+CMS (WordPress, etc.)
+Server type
+Frameworks
+📊 Sample Output (write in record)
+Tool	Info Found
+WHOIS	Domain registered in US
+NSLookup	IP: xxx.xxx.xxx.xxx
+Nmap	Port 80 open (HTTP)
+theHarvester	Emails found
+WhatWeb	Apache server

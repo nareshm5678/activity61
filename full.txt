@@ -1,0 +1,716 @@
+IT22030- ETHICAL HACKING LABORATORY 
+EX NO: 
+DATE: 
+LINUX BASIC COMMANDS 
+AIM 
+To learn and execute basic Linux commands for file handling, directory management, 
+system information, user management, and process handling in the Linux operating 
+system. 
+COMMANDS 
+1. pwd - Displays the present working directory. 
+2. ls - Lists files and directories in the current location. 
+3. ls - Lists files and directories in the current location. 
+Pg no: 
+Roll No: 2127220801056 
+4. whoami- Displays the current logged-in username. 
+5. date- Displays the current system date and time. 
+6. uname -a - Displays system and kernel information. 
+7. ip addr -a - Shows IP address details of the system. 
+8. df -h -a - Displays disk space usage in human-readable format. 
+Pg no: 
+Roll No: 2127220801056 
+RESULT 
+Thus, the basic Linux commands were successfully executed and studied. File operations, 
+system information retrieval, network configuration, process management, and 
+administrative commands were understood and performed successfully in the Linux 
+environment. 
+Pg no: 
+Roll No: 2127220801056 
+IT22030- ETHICAL HACKING LABORATORY 
+EX NO: 
+DATE: 
+LINUX ADVANCED COMMANDS 
+AIM 
+To understand and execute advanced Linux commands used for system administration, 
+networking, security, process control, file management, automation, and remote system 
+operations in the Linux environment. 
+COMMANDS 
+1. wget URL - Downloads files from the internet. 
+2. curl URL - Transfers data from or to a server. 
+Pg no: 
+Roll No: 2127220801056 
+Roll No: 2127220801056 Pg no:  
+ 
+3. netstat -tulnp - Displays active network connections and listening ports. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4. env - Displays environment variables. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5. nslookup domain_name - Retrieves DNS information of a domain. 
+6. dig domain_name- Displays detailed DNS query information. 
+7. passwd - Changes user account password. 
+RESULT 
+Thus, advanced Linux commands were successfully executed and studied. System 
+administration tasks, networking operations, security-related commands, process 
+management, remote access, file compression, and automation techniques were 
+successfully performed in the Linux environment. 
+Pg no: 
+Roll No: 2127220801056 
+IT22030- ETHICAL HACKING LABORATORY 
+EX NO: 
+DATE: 
+FOOTPRINTING 
+AIM 
+To perform footprinting on a target system using the Nmap tool in order to gather information such as open ports, 
+services, host availability, and network details. 
+PROCEDURE 
+STEP 1: Open the Zenmap application and enter the target IP address 
+in the target field. 
+Type the following command in the command section: 
+nmap -sn 45.33.32.156 
+STEP 2: Enter the following command in the command section to 
+perform a port scan on the target system: 
+nmap 45.33.32.156 
+Click on the Scan button to identify the open and filtered ports 
+available on the target host. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 3: Enter the following command in the command section to 
+perform service version detection on the target host: 
+nmap -sV 45.33.32.156 
+Click on the Scan button to detect the versions of services running on 
+the open ports. 
+STEP 4: Enter the following command in the command section to 
+perform operating system detection on the target host: 
+sudo nmap -O 45.33.32.156 
+Click on the Scan button to identify the operating system and device 
+information of the target system. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 5: Enter the following command in the command section to 
+perform an aggressive scan on the target system: 
+nmap -A 45.33.32.156 
+Click on the Scan button to perform advanced scanning features such as 
+OS detection, version detection, script scanning, and traceroute. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 6: Open the Ports/Hosts tab in the Zenmap interface to view 
+detailed information about the scanned ports and services. 
+STEP 7: Open the Topology tab in the Zenmap interface to visualize 
+the network path and topology between the local system and the target 
+host. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 8: Open the Host Details tab in the Zenmap interface to view 
+complete information about the scanned target host. 
+STEP 9: Open the Scans tab in the Zenmap interface to view the 
+history of all scans performed on the target host. 
+RESULT 
+Thus, footprinting and network reconnaissance were successfully performed on the target 
+host using the Nmap / Zenmap tool. Information such as host availability, open ports, 
+running services, service versions, operating system details, and network topology were 
+successfully identified. 
+Pg no: 
+Roll No: 2127220801056 
+IT22030- ETHICAL HACKING LABORATORY 
+EX NO: 
+DATE: 
+RECONNAISSANCE 
+AIM 
+To perform reconnaissance on a target system using the Nmap tool in order to collect 
+detailed information about network hosts, open ports, services, operating systems, and 
+possible vulnerabilities. 
+PROCEDURE 
+STEP 1: Open the Zenmap application and enter the target IP address. 
+Type the following command in the command section: 
+whois 45.33.32.156 
+Execute the command to gather domain and ownership information 
+related to the target IP address. 
+STEP 2: Enter the following command in the command section to 
+perform detailed service version detection with higher intensity: 
+nmap -sV --version-intensity 5 45.33.32.156 
+Click on the Scan button to identify running services and obtain 
+detailed version information from the target host. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 3: Enter the following command in the command section to 
+perform reconnaissance using Nmap scripting engine discovery scripts: 
+nmap --script discovery 45.33.32.156 
+Click on the Scan button to execute discovery scripts and gather 
+additional information about the target system. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 4: Enter the following command in the command section to scan 
+only the open ports and detect running services on the target host: 
+sudo nmap -sC -sV -p- --open 45.33.32.156 
+Click on the Scan button to perform default script scanning, version 
+detection, and full port scanning for open ports only. 
+STEP 5: Select the Slow Comprehensive Scan profile in the Zenmap 
+interface to perform an advanced reconnaissance scan. 
+The following command is automatically generated: 
+nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 
+53 --script "default or (discovery and safe)" 
+Click on the Scan button to execute a detailed reconnaissance scan on 
+the target system. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 6: Open the Topology tab in the Zenmap interface to visualize 
+the network relationship between the local system and the discovered 
+hosts. 
+RESULT 
+Thus, footprinting and network reconnaissance were successfully performed on the target 
+host using the Nmap / Zenmap tool. Information such as host availability, open ports, 
+running services, service versions, operating system details, and network topology were 
+successfully identified. 
+Pg no: 
+Roll No: 2127220801056 
+IT22030- ETHICAL HACKING LABORATORY 
+EX NO: 
+DATE: 
+SCANNING NETWORKS 
+AIM 
+To perform network scanning using the Nmap tool in order to identify active hosts, open 
+ports, running services, and network information within the target network. 
+PROCEDURE 
+STEP 1: Open the Zenmap application and enter the target IP address 
+in the target field. 
+Type the following command in the command section: 
+nmap -sn 45.33.49.119 
+Click on the Scan button to perform a ping scan and check whether the 
+target host is active on the network. 
+STEP 2: Enter the following command in the command section to 
+perform a TCP SYN scan on the target host: 
+sudo nmap -sS 45.33.49.119 
+Click on the Scan button to identify open TCP ports on the target 
+system. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 3: Enter the following command in the command section to 
+perform service version detection and operating system identification: 
+sudo nmap -sV -O 45.33.49.119 
+Click on the Scan button to identify running services and detect the 
+operating system of the target host. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 4: Enter the following command in the command section to 
+perform vulnerability scanning on the target host using Nmap scripts: 
+nmap --script vuln 45.33.49.119 
+Click on the Scan button to execute vulnerability detection scripts on 
+the target system. 
+STEP 5: Enter the following command in the command section to 
+perform an aggressive scan and save the scan results into a text file: 
+nmap -A -oN network_scan_report.txt 45.33.49.119 
+Click on the Scan button to execute the scan and generate a normal 
+output report file. 
+Pg no: 
+Roll No: 2127220801056 
+RESULT 
+Thus, network scanning was successfully performed using the Nmap / Zenmap tool. 
+Active hosts, open ports, running services, operating system details, vulnerabilities, and 
+network information were successfully identified and analyzed. 
+Pg no: 
+Roll No: 2127220801056 
+IT22030- ETHICAL HACKING LABORATORY 
+EX NO: 
+DATE: 
+ENUMURATION AND SNIFFING 
+AIM 
+To perform sniffing and enumeration using the Nmap and Wireshark tools in order to 
+analyze network traffic, identify active hosts, detect open ports, enumerate services, and 
+gather network-related information. 
+PROCEDURE 
+STEP 1: Open the Wireshark application to begin packet sniffing and 
+network traffic analysis. 
+Select the required network interface such as: 
+Ethernet 
+Wi-Fi 
+Loopback Adapter 
+Choose the active network interface for capturing packets. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 2: Select the active network interface and start packet capturing 
+in Wireshark. 
+Apply the following display filter in the filter bar to capture packets 
+related to the target IP address: 
+ip.addr == 45.33.32.156 
+Press Enter to apply the filter. 
+STEP 3: Open the Zenmap application and enter the target IP address. 
+Type the following command in the command section: 
+sudo nmap -sS -Pn 45.33.32.156 
+Click on the Scan button to perform a TCP SYN scan while disabling 
+host discovery. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 4: Enter the following command in the command section to 
+perform service version enumeration on the target host: 
+nmap -sV -Pn 45.33.32.156 
+Click on the Scan button to detect the versions of services running on 
+the open ports. 
+STEP 5 : Open the Zenmap application and enter the target IP address. 
+Type the following command in the command section: 
+sudo nmap -sS -Pn 45.33.32.156 
+Click on the Scan button to perform a TCP SYN scan while disabling 
+host discovery. 
+Pg no: 
+Roll No: 2127220801056 
+STEP 6: Return to the Wireshark window to observe and analyze the 
+captured packets generated during the Nmap scanning process. 
+STEP 7 : In Wireshark, right-click on a captured TCP packet and 
+select: 
+Follow → TCP Stream 
+This option is used to view the complete communication session 
+between the client and the server. 
+Pg no: 
+Roll No: 2127220801056 
+RESULT 
+Thus, sniffing and enumeration were successfully performed using the Wireshark and 
+Nmap tools. Network packets were captured and analyzed, while active hosts, open 
+ports, running services, service versions, and communication details were successfully 
+identified through packet analysis and enumeration techniques. 
+Pg no: 
+Roll No: 2127220801056 
+Roll No: 2127220801056 Pg no:  
+ 
+IT22030- ETHICAL HACKING LABORATORY 
+EX NO: 7 
+DATE: 
+MALWARE THREATS: WORMS, VIRUSES AND TROJANS – CASE STUDY 
+ 
+AIM 
+To study and understand the different types of malware threats — Viruses, Worms and Trojans — including their 
+definitions, types, propagation mechanisms, real-world examples, and the tools used for detection and prevention. 
+ 
+1. COMPUTER VIRUS 
+A computer virus isaself-replicating malicious code that attaches itself to a legitimate host file. It executes when the 
+infected file is opened, corrupting data or delivering a destructive payload. Viruses require user interaction to 
+spread. 
+Types of Viruses: 
+ 
+Type Description 
+Boot Sector Virus Infects the Master Boot Record; loads before the OS. 
+File Infector Virus Attaches to .exe files; activates on execution. 
+Macro Virus Embedded in Office document macros. Example: Melissa (1999). 
+Polymorphic Virus Changes its signature each infection to evade antivirus. 
+Multipartite Virus Attacks both boot sector and executable files simultaneously. 
+Case Study – ILOVEYOU Virus (2000): 
+Spread via email with subject 'ILOVEYOU' and a .vbs attachment. It overwrote files and mailed itself to all Outlook 
+contacts, infecting over 50 million computers and causing approximately USD 10 billion in damages. 
+ 
+2. COMPUTER WORM 
+A computer wormis standalone malware that self-replicates and spreads across networks without needing a host 
+file or user interaction. It exploits OS or network vulnerabilities, consuming bandwidth and system resources. 
+Types of Worms: 
+ 
+Type Description 
+Internet Worm Exploits internet-facing service vulnerabilities. Example: Code Red. 
+Email Worm Spreads through email attachments/links. Example: Mydoom. 
+Network Worm Uses SMB/FTP protocols to propagate. Example: WannaCry. 
+File-Sharing Worm Hides in P2P shared folders to infect downloads. 
+Case Study – WannaCry Worm (2017): 
+Exploited the EternalBlue vulnerability (MS17-010) in Windows SMB. Spread without any user interaction, encrypting 
+files and demanding Bitcoin ransom. Infected over 200,000 systems in 150 countries, severely affecting the UK NHS 
+and FedEx. 
+Roll No: 2127220801056 Pg no:  
+ 
+3. TROJAN HORSE 
+A Trojan horse is malware disguised as legitimate software. Unlike viruses or worms, Trojans do not self
+replicate. They rely on social engineering to trick users into installing them, then create backdoors, steal data, or 
+download more malware. 
+Types of Trojans: 
+ 
+Type Description 
+Remote Access Trojan Gives attacker full remote control. Example: DarkComet. 
+Banking Trojan Steals online banking credentials. Example: Zeus, Emotet. 
+Rootkit Trojan Hides malware at OS or kernel level to avoid detection. 
+Downloader Trojan Downloads and installs additional malware silently. 
+Case Study – Zeus Banking Trojan: 
+Spread via phishing emails, it hooked into browsers to intercept online banking sessions (Man-in-the- 
+Browser attack). Infected over 3.6 million computers in the USA alone, stealing hundreds of millions of dollars. 
+ 
+ 
+1. COMPARISON: VIRUS vs WORM vs TROJAN 
+ 
+Feature Virus Worm Trojan 
+Self-replication Yes (host needed) Yes (standalone) No 
+User interaction Required Not required Required (to run) 
+Network spread Limited Rapid Via deception 
+Primary damage File corruption Bandwidth/overload Data theft/backdoor 
+Example ILOVEYOU WannaCry Zeus 
+2. TOOLS USED FOR MALWARE ANALYSIS AND PROTECTION 
+ 
+Tool Category Purpose 
+Wireshark Network Analyser Capture and inspect malware network traffic 
+Malwarebytes Anti-Malware Detect and remove viruses, worms, trojans 
+Cuckoo Sandbox Sandbox Automated malware execution in a safe VM 
+IDA Pro / Ghidra Disassembler Static analysis of malware binaries 
+VirusTotal Online Scanner Multi-engine file and URL scanning 
+Snort / Suricata IDS / IPS Detect malware signatures in network traffic 
+3. PREVENTION AND COUNTERMEASURES: 
+Countermeasure 
+Description 
+Keep OS & Software 
+Updated 
+Apply security patches promptly to close vulnerabilities exploited by 
+worms. 
+Antivirus / EDR Software 
+Real-time endpoint scanning to detect and block virus and trojan 
+activity. 
+Email Filtering 
+Block executable attachments in mail gateways to prevent virus/trojan 
+delivery. 
+Firewall & IDS/IPS 
+Block unauthorized connections and detect malware signatures in 
+traffic. 
+User Awareness Training 
+Educate users on phishing and social engineering to avoid trojan 
+installation. 
+Isolate critical systems to limit worm lateral movement across the 
+Network Segmentation 
+network. 
+Maintain backups to recover from ransomware and destructive virus 
+Regular Offline Backups 
+payloads. 
+Restrict user permissions to minimise damage if malware executes. 
+Principle of Least Privilege  
+RESULT 
+Thus the case study on malware threats — Viruses, Worms and Trojans — has been successfully completed. The study 
+covered their definitions, types, real-world case studies (ILOVEYOU, WannaCry, Zeus), a comparative analysis, and 
+the tools used for malware detection and prevention. 
+Pg no: 
+Roll No: 2127220801056 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+EX NO:             IT22030 ETHICAL HACKING LABORATORY 
+DATE:                            Developing and Implementing Malwares 
+ 
+AIM: To understand the basic structure of a malware sample by creating the harmless EICAR antivirus test 
+file and to observe how Windows Defender detects the test sample. 
+ 
+PROCEDURE: 
+1. Open Notepad and paste the standard EICAR test string (X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR
+STANDARD-ANTIVIRUS-TEST-FILE!$H+H*) and save it on the Desktop as eicar.txt. 
+ 
+ 
+2. Save the file. Windows Defender immediately quarantines it and shows a 'Threat found' notification, 
+proving that the sample is recognised as a virus signature. 
+ 
+3. Open Windows Security > Virus & threat protection > Protection history and verify that EICAR_Test_File 
+has been blocked. 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+ 
+ 
+6. Delete the files after the demonstration. Conclude that even a signature-based AV tools such as Defender 
+successfully detect known samples. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+RESULT: Thus, the basic concept of malware was understood by generating the EICAR test sample and 
+detection by Windows Defender was demonstrated successfully. 
+ 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+EX NO:             IT22030 ETHICAL HACKING LABORATORY 
+DATE:                           Hacking Web Servers and Web Applications 
+ 
+AIM: To install the Damn Vulnerable Web Application (DVWA) on a local XAMPP server and use OWASP 
+ZAP to perform an automated vulnerability scan against the running web application. 
+ 
+PROCEDURE: 
+1. Download and install XAMPP for Windows from https://www.apachefriends.org. From the XAMPP 
+control panel, start the Apache and MySQL services. 
+ 
+ 
+2. Download DVWA from https://github.com/digininja/DVWA, extract it into C:\xampp\htdocs\dvwa and 
+open http://localhost/dvwa/setup.php in the browser. Click 'Create / Reset Database'. 
+3. Login to DVWA using the default credentials admin / password and set DVWA Security to 'Low' from the 
+DVWA Security tab. 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+ 
+ 
+4. Download and install OWASP ZAP from https://www.zaproxy.org. Open ZAP and select 'Automated 
+Scan'. 
+ 
+ 
+5. Enter the target URL http://localhost/dvwa/ and click 'Attack'. ZAP will spider the site and run an active 
+scan. 
+ 
+ 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+6. After the scan completes, open the 'Alerts' tab to view the vulnerabilities found in DVWA, such as Cross 
+Site Scripting (XSS), SQL Injection, and CSRF. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+RESULT: Thus, a vulnerable web application (DVWA) was installed locally and scanned successfully using 
+OWASP ZAP, and the common web server / web application vulnerabilities were identified. 
+ 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+EX NO:             IT22030 ETHICAL HACKING LABORATORY 
+DATE:                              SQL Injection and Session Hijacking 
+ 
+AIM: To demonstrate a basic SQL Injection attack and a simple session hijacking attack using cookie 
+manipulation against the DVWA application running on the local server. 
+ 
+PROCEDURE: 
+1. Start XAMPP (Apache and MySQL) and login to http://localhost/dvwa/ with credentials admin / 
+password. Set DVWA Security to 'Low'. 
+ 
+ 
+2. Open the SQL Injection module. In the User ID field, enter the payload  1' OR '1'='1  and click Submit. 
+ 
+3. Observe that all user records (id, first name, surname) from the underlying database are returned, proving 
+that user input is concatenated directly into the SQL query. 
+ 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+4. Now demonstrate session hijacking. In one browser, login as admin and open Developer Tools (F12) > 
+Application > Cookies and copy the value of the PHPSESSID cookie. 
+ 
+ 
+5. Open a different browser (or incognito window) where you are not logged in. Open DevTools > 
+Application > Cookies and create a new PHPSESSID cookie with the value copied above. Refresh the page. 
+ 
+ 
+6. Observe that the second browser is now logged in as admin without ever entering a password. This 
+demonstrates that stealing a session cookie is enough to hijack a session. 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+RESULT: Thus, a basic SQL Injection attack and a cookie-based session hijacking attack were performed 
+successfully on DVWA. 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+EX NO:                       IT22030 ETHICAL HACKING LABORATORY 
+DATE:                       Wireless Network Hacking and Cloud Computing 
+ 
+AIM: To recover saved Wi-Fi network passwords on a Windows machine using built-in netsh commands, 
+and to demonstrate the cloud computing service model by accessing a remote Linux operating system 
+through a web browser using DistroSea. 
+ 
+PROCEDURE: 
+1. Open Command Prompt as Administrator and execute 'netsh wlan show profiles' to list all saved Wi-Fi network 
+profiles on the system. 
+ 
+ 
+2. Pick any saved profile name (for example: Asd) and run 'netsh wlan show profile name="Asd" key=clear'. Under 
+'Security settings' the Key Content field reveals the stored Wi-Fi password in plaintext. 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+  
+ 
+3. Conclusion of the wireless part: any user with administrative access to a machine can extract every saved Wi-Fi 
+password, showing why physical access to a system is itself a security risk. 
+4. Cloud Computing: Open the web browser and navigate to https://distrosea.com. This website hosts real 
+Linux operating systems on remote servers and provides browser-based access, which is a clear example of 
+Infrastructure as a Service (IaaS) cloud computing. 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+  
+ 
+5. From the catalog, select any Linux distribution such as Ubuntu, Debian or Kali. Choose a recent version 
+and click the 'Try' button. The remote VM begins to boot inside the browser tab. 
+  
+ 
+6. Wait until the Linux desktop loads in the browser tab. All processing happens on DistroSea's servers; only 
+the screen, keyboard and mouse are streamed to the local machine. 
+7. Open a terminal inside the remote Linux session and run 'uname -a' and 'whoami'. Observe that the kernel 
+name, hostname and username belong to the remote server, confirming that the operating system is being 
+consumed as a cloud service. 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+  
+ 
+8. Conclude that cloud computing allows hardware (IaaS), platforms (PaaS) and software (SaaS) to be 
+consumed on demand over the internet without the user owning or installing anything locally. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+RESULT: Thus, saved Wi-Fi credentials were recovered using the netsh wlan command, and the concept of 
+cloud computing was demonstrated successfully by running a remote Linux operating system inside the web 
+browser using DistroSea. 
+ 
+ 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+EX NO:             IT22030 ETHICAL HACKING LABORATORY 
+DATE:                             Penetration Testing using Metasploit and Metasploitable 
+ 
+AIM: To perform a basic penetration test using the Metasploit Framework against the Metasploitable 2 
+vulnerable virtual machine, by scanning open ports with Nmap and exploiting the vsftpd 2.3.4 backdoor. 
+ 
+PROCEDURE: 
+1. Download Metasploitable 2 (a deliberately vulnerable Linux VM) from SourceForge and import it into 
+VMware Workstation Player. Power on the VM and login with msfadmin / msfadmin. Note the IP address by 
+running 'ifconfig'. 
+ 
+ 
+2. On the Windows host, install Nmap from https://nmap.org and run 'nmap -sV 192.168.189.128' to 
+discover open ports and service versions. 
+ 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+3. Install the Metasploit Framework on Windows from https://www.metasploit.com/download. Open 
+msfconsole. 
+ 
+4. In msfconsole, type 'use exploit/unix/ftp/vsftpd_234_backdoor' to select the vsftpd backdoor exploit 
+module. 
+ 
+5. Set the target with 'set RHOSTS 192.168.189.128 and run the exploit using 'exploit'. A root shell is 
+returned by the vulnerable FTP service. 
+ 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+6. Inside the obtained shell, run commands such as 'whoami', 'id' and 'cat /etc/shadow' to confirm full root 
+access, then exit with 'exit'. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+RESULT: Thus, a basic penetration test was performed successfully using the Metasploit Framework 
+against the Metasploitable 2 VM, and root access was obtained through the vsftpd 2.3.4 backdoor exploit. 
+ 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+EX NO:                IT22030 ETHICAL HACKING LABORATORY 
+DATE:                    Virtualization using Windows Subsystem for Linux (WSL) 
+ 
+AIM: To enable and use Windows Subsystem for Linux (WSL) on a Windows host so that a full Ubuntu 
+Linux environment runs alongside Windows, demonstrating the concept of operating system virtualization. 
+ 
+PROCEDURE: 
+1. Open Windows PowerShell as Administrator (right-click the Start menu and choose 'Windows PowerShell 
+(Admin)' or 'Terminal (Admin)'). 
+2. Execute the command 'wsl --install'. This single command enables the WSL feature, the Virtual Machine 
+Platform feature and downloads Ubuntu (the default distribution) automatically. 
+3. Restart the computer when prompted, so that the virtualization features take effect. 
+4. After reboot, an Ubuntu setup window opens automatically. Enter a new UNIX username and password 
+for the Linux environment when prompted. 
+ 
+ 
+5. Once setup completes, the Ubuntu shell is ready. Verify the Linux kernel version and distribution by 
+running 'uname -a' followed by 'lsb_release -a'. 
+ 
+ 
+6. Open a new PowerShell window and run 'wsl --list --verbose' to confirm that Ubuntu is registered as a 
+running WSL distribution. 
+Roll No: 2127220801056                                                                                                                            Pg no:            
+  
+ 
+7. Run a Linux-only command such as 'sudo apt update' inside Ubuntu to confirm the virtualized Linux 
+environment can use the Windows host's network connection to fetch packages. 
+  
+ 
+8. Conclude that WSL provides a fully virtualized Linux environment without installing any third-party 
+hypervisor, making it convenient for ethical hacking experiments that require Linux tools. 
+ 
+RESULT: Thus, Windows Subsystem for Linux was enabled successfully and an Ubuntu Linux distribution 
+was launched alongside Windows, demonstrating the concept of operating system virtualization. 

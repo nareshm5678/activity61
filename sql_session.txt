@@ -1,0 +1,14 @@
+1. Start XAMPP (Apache and MySQL) and login to http://localhost/dvwa/ with credentials admin / password. Set DVWA Security to 'Low'.
+ 
+
+2. Open the SQL Injection module. In the User ID field, enter the payload  1' OR '1'='1  and click Submit.
+ 
+3. Observe that all user records (id, first name, surname) from the underlying database are returned, proving that user input is concatenated directly into the SQL query.
+ 
+4. Now demonstrate session hijacking. In one browser, login as admin and open Developer Tools (F12) > Application > Cookies and copy the value of the PHPSESSID cookie.
+ 
+
+5. Open a different browser (or incognito window) where you are not logged in. Open DevTools > Application > Cookies and create a new PHPSESSID cookie with the value copied above. Refresh the page.
+ 
+
+6. Observe that the second browser is now logged in as admin without ever entering a password. This demonstrates that stealing a session cookie is enough to hijack a session.

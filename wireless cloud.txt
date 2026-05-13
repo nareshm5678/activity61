@@ -1,0 +1,19 @@
+1. Open Command Prompt as Administrator and execute 'netsh wlan show profiles' to list all saved Wi-Fi network profiles on the system.
+ 
+
+2. Pick any saved profile name (for example: Asd) and run 'netsh wlan show profile name="Asd" key=clear'. Under 'Security settings' the Key Content field reveals the stored Wi-Fi password in plaintext.
+  
+
+3. Conclusion of the wireless part: any user with administrative access to a machine can extract every saved Wi-Fi password, showing why physical access to a system is itself a security risk.
+4. Cloud Computing: Open the web browser and navigate to https://distrosea.com. This website hosts real Linux operating systems on remote servers and provides browser-based access, which is a clear example of Infrastructure as a Service (IaaS) cloud computing.
+  
+
+5. From the catalog, select any Linux distribution such as Ubuntu, Debian or Kali. Choose a recent version and click the 'Try' button. The remote VM begins to boot inside the browser tab.
+  
+
+6. Wait until the Linux desktop loads in the browser tab. All processing happens on DistroSea's servers; only the screen, keyboard and mouse are streamed to the local machine.
+7. Open a terminal inside the remote Linux session and run 'uname -a' and 'whoami'. Observe that the kernel name, hostname and username belong to the remote server, confirming that the operating system is being consumed as a cloud service.
+  
+
+8. Conclude that cloud computing allows hardware (IaaS), platforms (PaaS) and software (SaaS) to be consumed on demand over the internet without the user owning or installing anything locally.
+
